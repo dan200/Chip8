@@ -1,5 +1,5 @@
 # Chip8
-An easily embeddable emulator for the [CHIP-8](https://en.wikipedia.org/wiki/CHIP-8) system, written in C#. Input/Output is not included.
+An easily embeddable emulator for the [CHIP-8](https://en.wikipedia.org/wiki/CHIP-8) system, written in C#. Input/Output must be provided by the user.
 
 ## Example usage
 
@@ -7,7 +7,7 @@ At startup:
 
 ```C#
 chip = new Chip8();
-chip.LoadROM( File.ReadAllBytes( "INVADERS" ) ); // Included in http://www.zophar.net/pdroms/chip8/chip-8-games-pack.html
+chip.LoadROM( File.ReadAllBytes( "INVADERS" ) ); // See Links below
 ```
 
 60 times per second:
@@ -41,3 +41,9 @@ else
   // Set audio output volume to 0
 }
 ```
+
+## Links
+
+1. [CHIP-8 Wikipedia page (includes specification)](https://en.wikipedia.org/wiki/CHIP-8)
+2. [CHIP-8 Games Pack (includes several CHIP-8 ROM files for testing)](http://www.zophar.net/pdroms/chip8/chip-8-games-pack.html)
+3. [Another CHIP-8 Specification (includes keypad layout diagram)](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)
